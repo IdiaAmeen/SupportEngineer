@@ -29,6 +29,7 @@ const parcel = {
 };
 
 const objectId = "2b7d72b80ee74e49859bfba8766b1363";
+const parcelId = "64ccbd97263e4192940f81e951fa3b7b";
 
 // Create Shipment //
 // Replace credentials in addressFrom , addressTo and parcel variables to create shipment//
@@ -65,9 +66,9 @@ shippo.shipment
     console.log(error);
   });
 //Retrieve parcel//
-// Replace objectId variable to retrieve parcel//
+// Replace parcelId variable to retrieve parcel//
 shippo.parcel
-  .retrieve(objectId)
+  .retrieve(parcelId)
   .then((response) => {
     console.log(response);
   })
