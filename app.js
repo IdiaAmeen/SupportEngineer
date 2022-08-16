@@ -28,9 +28,10 @@ const parcel = {
   mass_unit: "lb",
 };
 
-let objectId = "2b7d72b80ee74e49859bfba8766b1363";
+const objectId = "2b7d72b80ee74e49859bfba8766b1363";
 
 // Create Shipment //
+// Replace credentials in addressFrom , addressTo and parcel variables to create shipment//
 shippo.shipment
   .create({
     address_from: addressFrom,
@@ -43,6 +44,7 @@ shippo.shipment
   });
 
 //Retrieve shipment//
+// Replace objectId variable to retrieve shipment//
 shippo.shipment
   .retrieve(objectId)
   .then((response) => {
@@ -53,6 +55,7 @@ shippo.shipment
   });
 
 //Retrieve rates//
+// Replace objectId variable to retrieve rates/
 shippo.shipment
   .rates(objectId)
   .then((response) => {
@@ -62,6 +65,7 @@ shippo.shipment
     console.log(error);
   });
 //Retrieve parcel//
+// Replace objectId variable to retrieve parcel//
 shippo.parcel
   .retrieve(objectId)
   .then((response) => {
@@ -72,6 +76,7 @@ shippo.parcel
   });
 
 // Retrieve sender & reciepient address//
+//Enter object id to retrieve sender and reciepient addressess//
 
 shippo.shipment
   .retrieve(objectId)
