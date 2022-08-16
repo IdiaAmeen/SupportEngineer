@@ -1,6 +1,6 @@
 # SupportEngineer
 
-##. General:
+## General:
 This is a tool to automate shipping related tasks. This includes 
 1. Create a shipment
 2. Retrieve a shipment
@@ -14,7 +14,7 @@ You can install this package by running the following command:
 ```shell
   npm install shippo
 ```
-This means, you don't actually have to download this repository. If you wish to make modifications to the wrapper, you can clone this repository into your project.
+
 
 ### Requirements:
 The shippo Node.js has no additional dependencies.
